@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "Product Sans";
+	src: url(./Product\ Sans\ Regular.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Product Sans", sans-serif;
+	color: #454545;
+	padding: 0;
+}
+
+main {
+	margin: 0 12rem;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		margin: 0 5rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		margin: 0 2rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	main {
+		margin: 0 1.5rem;
+	}
+}
+
+.button-div,
+.logo {
+	flex: 1;
+	display: flex;
+}
+
+.logo {
+	align-items: flex-end;
+}
+
+.tagline {
+	padding: 2.25rem 0;
+}
+
+.button-div {
+	align-items: flex-start;
+}
+
+body,
+h1 {
+	margin: 0;
+}
+
+button,
+h1 span {
+	width: fit-content;
+	color: #3b82f6;
+}
+
+button {
+	border: 0;
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.25rem;
+	font: inherit;
+	font-size: 1.25rem;
+	background-color: #3b82f6;
+	color: #fff;
+	cursor: pointer;
+}
