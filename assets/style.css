@@ -7,10 +7,38 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--blue: #004aad;
+	--light-blue: rgb(209, 245, 255);
+	--text: #454545;
+}
+
 body {
 	font-family: "Product Sans", sans-serif;
-	color: #454545;
+	color: var(--text);
 	padding: 0;
+}
+
+body,
+h1 {
+	margin: 0;
+}
+
+button,
+h1 span {
+	width: fit-content;
+	color: var(--blue);
+}
+
+button {
+	border: 0;
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.25rem;
+	font: inherit;
+	font-size: 1.25rem;
+	background-color: var(--light-blue);
+	color: var(--blue);
+	cursor: pointer;
 }
 
 main {
@@ -52,28 +80,10 @@ main {
 	padding: 2.25rem 0;
 }
 
+.tagline h1 {
+	font-weight: 500;
+}
+
 .button-div {
 	align-items: flex-start;
-}
-
-body,
-h1 {
-	margin: 0;
-}
-
-button,
-h1 span {
-	width: fit-content;
-	color: #3b82f6;
-}
-
-button {
-	border: 0;
-	border-radius: 0.25rem;
-	padding: 0.75rem 1.25rem;
-	font: inherit;
-	font-size: 1.25rem;
-	background-color: #3b82f6;
-	color: #fff;
-	cursor: pointer;
 }
